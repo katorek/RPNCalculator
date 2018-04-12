@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="3"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:key="precision"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Precyzja" />
+
+    <EditTextPreference
+        android:inputType="number"
+        android:defaultValue="30"
+        android:key="font_size"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Wielkość czcionki" />
+
+    <ListPreference
+        android:entries="@array/pref_text_view_color"
+        android:entryValues="@array/pref_text_view_color_values"
+        android:key="font_color"
+        android:title="Kolor czcionki" />
+
+    <ListPreference
+        android:entries="@array/pref_background_entries"
+        android:entryValues="@array/pref_background_values"
+        android:key="background_color"
+        android:title="@string/pref_background_title" />
+
+</PreferenceScreen>
